@@ -5,18 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Run Module",
+            "name": "Run Tower Firmware",
             "type": "python",
             "request": "launch",
-            "module": "examplePackage.exampleModule",
-            "justMyCode": true
-        },
-        {
-            "name": "Python: Run File",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/examplePackage/exampleModule.py",
-            "console": "integratedTerminal",
+            "module": "RCTTower.main",
             "justMyCode": true
         }
     ]

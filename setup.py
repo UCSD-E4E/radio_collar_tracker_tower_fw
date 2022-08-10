@@ -1,15 +1,18 @@
 from setuptools import setup, find_packages
+import RCTTower
 
 setup(
-    name='examplePackage',
-    version='0.0.0.1',
+    name='RCTTower',
+    version=RCTTower.__version__,
     author='UCSD Engineers for Exploration',
     author_email='e4e@eng.ucsd.edu',
     entry_points={
         'console_scripts': [
-            'ExamplePythonConsoleScript = examplePackage.exampleModule:exampleEntryPoint'
+            'rct_tower = RCTTower.main:main'
         ]
     },
     packages=find_packages(),
-    install_requires=[]
+    install_requires=[
+        "pyserial",
+    ]
 )
