@@ -1,4 +1,5 @@
 import yaml
+import appdirs
 
 def main() -> None:
     """Example entry point that exersizes all of the module's functions
